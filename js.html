@@ -39,27 +39,46 @@ else
 }
 
 var color = window.prompt("Le monde a besoin de connaitre ta couleur préférée");
-  if (color=="red") {document.getElementById("color").innerHTML = "<span style=\"color: red;\">"
-    + color +"</span>";}
-  if (color=="blue") {document.getElementById("color").innerHTML = "<span style=\"color: blue;\">"
-    + color +"</span>";}
-  if (color=="green") {document.getElementById("color").innerHTML = "<span style=\"color: green;\">"
-    + color +"</span>";}
-  if (color=="yellow") {document.getElementById("color").innerHTML = "<span style=\"color: yellow;\">"
-    + color +"</span>";}
-  if (color=="pink") {document.getElementById("color").innerHTML = "<span style=\"color: pink;\">"
-    + color +"</span>";}
-  if (color=="brown") {document.getElementById("color").innerHTML = "<span style=\"color: brown;\">"
-    + color +"</span>";}
-  if (color=="orange") {document.getElementById("color").innerHTML = "<span style=\"color: orange;\">"
-    + color +"</span>";}
-  if (color=="purple") {document.getElementById("color").innerHTML = "<span style=\"color: purple;\">"
-    + color +"</span>";}
-  if (color=="black") {document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
-    + color +"</span>";}
-  else { document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
-    + color +"</span>";}
-
+    switch (color){
+      case "red":
+      document.getElementById("color").innerHTML = "<span style=\"color: red;\">"
+        + color +"</span>";
+      break;
+      case "blue":
+      document.getElementById("color").innerHTML = "<span style=\"color: blue;\">"
+        + color +"</span>";
+      break;
+      case "green":
+      document.getElementById("color").innerHTML = "<span style=\"color: green;\">"
+      + color +"</span>";
+      break;
+      case "yellow":
+      document.getElementById("color").innerHTML = "<span style=\"color: yellow;\">"
+        + color +"</span>";
+      break;
+      case "pink":
+      document.getElementById("color").innerHTML = "<span style=\"color: pink;\">"
+      + color +"</span>";
+      break;
+      case "brown":
+      document.getElementById("color").innerHTML = "<span style=\"color: brown;\">"
+        + color +"</span>";
+      break;
+      case "orange":
+      document.getElementById("color").innerHTML = "<span style=\"color: orange;\">"
+      + color +"</span>";
+      break;
+      case "purple":
+      document.getElementById("color").innerHTML = "<span style=\"color: purple;\">"
+        + color +"</span>";
+      break;
+      case "black":
+      document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
+      + color +"</span>";
+      default:
+      document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
+      + color +"</span>";
+    }
 
 
 </script>
