@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link type="text/css" rel="stylesheet" href="intro_javascript.css"/>
+
+   <title>
+     Introduction à Javascript
+   </title>
+   <meta charset="utf-8">
+   <meta name="description" content="Intro JS" />
+</head>
+
+<body>
+
+<table>
+      <tr>
+        <th>"Quel est ton nom ?"<th><td id="name"></td>
+      </tr>
+      <tr>
+        <th>"Qu'est-ce donc que tu veux faire ichi, crédiou ?"</th><td id="quest"></td>
+      </tr>
+        <tr>
+        <th> "Le monde a besoin de connaitre ta couleur préférée"</th><td id="color"></td>
+      </tr>
+</table>
+
+<script language="javascript">
+
+var name = window.prompt("Quel est ton nom ?");
+  document.getElementById("name").innerHTML= name;
+var quest = window.prompt("Qu'est-ce donc que tu veux faire ichi, crédiou ?");
+if (quest=="to seek for the holy grail")
+  { document.getElementById("quest").innerHTML=quest;}
+else
+{  document.getElementById("quest").innerHTML = "<span style=\"color: red;\">"
+  + quest +"</span>";
+  window.alert("Wrong !");
+}
+
+var color = window.prompt("Le monde a besoin de connaitre ta couleur préférée");
+  if (color=="red") {document.getElementById("color").innerHTML = "<span style=\"color: red;\">"
+    + color +"</span>";}
+  if (color=="blue") {document.getElementById("color").innerHTML = "<span style=\"color: blue;\">"
+    + color +"</span>";}
+  if (color=="green") {document.getElementById("color").innerHTML = "<span style=\"color: green;\">"
+    + color +"</span>";}
+  if (color=="yellow") {document.getElementById("color").innerHTML = "<span style=\"color: yellow;\">"
+    + color +"</span>";}
+  if (color=="pink") {document.getElementById("color").innerHTML = "<span style=\"color: pink;\">"
+    + color +"</span>";}
+  if (color=="brown") {document.getElementById("color").innerHTML = "<span style=\"color: brown;\">"
+    + color +"</span>";}
+  if (color=="orange") {document.getElementById("color").innerHTML = "<span style=\"color: orange;\">"
+    + color +"</span>";}
+  if (color=="purple") {document.getElementById("color").innerHTML = "<span style=\"color: purple;\">"
+    + color +"</span>";}
+  if (color=="black") {document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
+    + color +"</span>";}
+  else { document.getElementById("color").innerHTML = "<span style=\"color: black;\">"
+    + color +"</span>";}
+
+
+
+</script>
+
+
+</body>
+
+</html>
